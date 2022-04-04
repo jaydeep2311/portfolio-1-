@@ -161,11 +161,11 @@ header .navbar a:hover {
   gap: 1.5rem;
   align-items: center;
 }
-.about .row .image {
+.row .image {
   text-align: center;
   flex: 1 1 25rem;
 }
-.image img {
+.about .row .image img {
   width: 30rem;
   border-radius: 0.5rem;
   border: 0.5rem solid #fff;
@@ -238,7 +238,7 @@ header .navbar a:hover {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 20rem;
 }
 .project .container .box img {
@@ -246,7 +246,67 @@ header .navbar a:hover {
   width: 100%;
   object-fit: contain;
 }
-
+.project .container .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .container .box:hover .content {
+  left: 0;
+}
+.img-contact {
+  border: none !important;
+  width: 100%;
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+.contact .row .image form {
+  flex: 1 1 40rem;
+  padding: 1rem 2rem;
+}
+.contact .row .image form .inputbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .row form .inputbox input,
+.contact .row form .box,
+.contact .row form textarea {
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color: #222;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-transform: none;
+}
+.contact .row form .inputbox input,
+.contact .row form .box:focus,
+.contact .row form textarea {
+  border: 1px solid var(--green);
+}
+.footer {
+  font-size: 2rem;
+  padding: 2.5rem;
+  color: #666;
+  text-align: center;
+}
+.footer span {
+  color: var(--green);
+}
 /*Media queries*/
 @media (max-width: 991px) {
   html {
@@ -274,6 +334,7 @@ header .navbar a:hover {
     font-size: 3rem;
   }
 }
+
 @media (max-width: 450px) {
   html {
     font-size: 45%;
