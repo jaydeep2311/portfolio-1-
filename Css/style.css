@@ -41,21 +41,19 @@ section {
 header {
   position: fixed;
   top: 0;
-  right: 0;
-  min-height: 100vh;
+  width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   z-index: 1000;
-  box-shadow: 5px 5px 5px 5px whitesmoke;
 }
 header .navbar {
-  writing-mode: vertical-lr;
+  /* writing-mode: vertical-lr; */
   padding: 1.5rem;
 }
 header .navbar a {
-  padding: 1.5rem;
+  padding: 5.5rem;
   font-size: 2rem;
   color: #222;
 }
@@ -74,6 +72,23 @@ header .navbar a:hover {
   cursor: pointer;
   font-size: 3rem;
   display: none;
+}
+.linkedin-pro {
+  text-decoration: none;
+  color: #fff;
+}
+.p-content {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-left: 5%;
+}
+.p-content > span {
+  color: var(--green);
+}
+.pro-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .img-box {
   width: 300px;
@@ -138,6 +153,7 @@ header .navbar a:hover {
   border: 1px solid #fff;
   font-size: 1.7rem;
   cursor: pointer;
+  margin-left: 1%;
 }
 .btn:hover {
   background: var(--green);
@@ -171,35 +187,35 @@ header .navbar a:hover {
   border: 0.5rem solid #fff;
   box-shadow: 0.5rem 1rem #222;
 }
-.about .row .content h3 {
+.about .content h3 {
   color: #fff;
   font-size: 4rem;
 }
-.about .row .content h3 span {
+.about .content h3 span {
   color: var(--green);
 }
-.about .row .content .info {
+.about .content .info {
   color: #fff;
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 2;
 }
-.about .row .content .container {
+.about .content .container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 1rem 0;
 }
-.about .row .content .container .box {
+.about .content .container .box {
   flex: 1 1 20rem;
 }
-.about .row .content .container .box p {
+.about .content .container .box p {
   font-size: 1.7rem;
   color: #fff;
   padding: 0.5rem 0;
   line-height: 2;
 }
-.about .row .content .container .box p span {
+.about .content .container .box p span {
   color: var(--green);
 }
 .skill .container {
@@ -231,8 +247,9 @@ header .navbar a:hover {
 }
 .project .container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 .project .container .box {
   flex: 1 1 30rem;
@@ -243,12 +260,12 @@ header .navbar a:hover {
 }
 .project .container .box img {
   height: 100%;
-  width: 100%;
+  width: 70%;
   object-fit: contain;
 }
 .project .container .box .content {
   height: 100%;
-  width: 100%;
+  width: 75%;
   position: absolute;
   top: 0;
   left: -100%;
@@ -262,30 +279,37 @@ header .navbar a:hover {
 }
 .img-contact {
   border: none !important;
-  width: 100%;
 }
 .contact .row {
   display: flex;
-  align-items: center;
+  /* align-items: center;*/
   flex-wrap: wrap;
-  gap: 1.5rem;
+  margin-top: 10%;
+  /* gap: 1rem;  */
 }
 .contact .row .image {
-  flex: 1 1 40rem;
+  width: 50%;
 }
-.contact .row .image form {
-  flex: 1 1 40rem;
-  padding: 1rem 2rem;
+.form-box {
+  width: 50%;
+  padding-left: 10%;
+}
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .contact .row .image form .inputbox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.inputbox > input {
+  width: 100%;
+}
 .contact .row form .inputbox input,
 .contact .row form .box,
 .contact .row form textarea {
-  width: 100%;
   border-radius: 0.5rem;
   font-size: 1.7rem;
   color: #222;
