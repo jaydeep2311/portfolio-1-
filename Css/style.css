@@ -77,10 +77,17 @@ header .navbar a:hover {
   text-decoration: none;
   color: #fff;
 }
+section {
+  margin-top: 10%;
+}
 .p-content {
   color: #fff;
   font-size: 1.3rem;
   margin-left: 5%;
+}
+.tech-icons {
+  font-size: 25px;
+  margin-left: 10px;
 }
 .p-content > span {
   color: var(--green);
@@ -256,6 +263,7 @@ header .navbar a:hover {
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
+  margin-top: 8%;
   height: 20rem;
 }
 .project .container .box img {
