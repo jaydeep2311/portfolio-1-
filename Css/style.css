@@ -375,3 +375,34 @@ section {
     font-size: 4rem;
   }
 }
+.con-icons {
+  color: var(--green);
+  text-decoration: none;
+}
+.con-icons :hover {
+  transform: scale(2, 2);
+}
+.contact-sec {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-icons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-size: 1.5rem;
+  padding-top: 3%;
+}
+span {
+  color: var(--green);
+}
